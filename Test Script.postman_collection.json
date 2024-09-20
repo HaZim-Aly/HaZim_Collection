@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "7c1c5bc6-ba51-4316-b84b-e03e05a5f5ed",
+		"name": "Test Script",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37971312"
+	},
+	"item": [
+		{
+			"name": "https://webhook.site/01b1e5cf-bef9-4a7b-ab47-e73f045c58c8?name1=Hazim&name2=Aly&Age=29",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HaZim\",function(){\r",
+							"pm.expect(2).to.equal(2);\r",
+							"let a = \r",
+							"{\r",
+							"    \"name\" : \"haazim\"\r",
+							"};\r",
+							"let b = {\r",
+							"    \"name\" : \"haazim\"\r",
+							"\r",
+							"};\r",
+							"pm.test(\"hazim 1\"),function(){\r",
+							"\r",
+							"pm.expect(\"HHAAZZIIMM\").to.match(/^Y/);\r",
+							"\r",
+							"\r",
+							"\r",
+							"}\r",
+							"\r",
+							"\r",
+							"\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Do-Not-Track",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webhook.site/01b1e5cf-bef9-4a7b-ab47-e73f045c58c8?name1=Hazim&name2=Aly&Age=29",
+					"protocol": "https",
+					"host": [
+						"webhook",
+						"site"
+					],
+					"path": [
+						"01b1e5cf-bef9-4a7b-ab47-e73f045c58c8"
+					],
+					"query": [
+						{
+							"key": "name1",
+							"value": "Hazim"
+						},
+						{
+							"key": "name2",
+							"value": "Aly"
+						},
+						{
+							"key": "Age",
+							"value": "29"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
